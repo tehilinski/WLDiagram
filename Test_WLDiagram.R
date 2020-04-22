@@ -33,7 +33,7 @@ experiment  <- "rcp85"
 yearRange   <- c( 2046, 2055 )
 
 # load per-month data
-regionName  <- "Vandenberg AFB"
+regionName  <- "Vandenberg, CA"
 pm.df <- readRDS("data_PerMonth.rds")	# units are SI
 
 # names(pm.df)
