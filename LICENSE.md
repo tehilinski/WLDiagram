@@ -30,6 +30,6 @@ For more information, please refer to <https://unlicense.org>
 
 ## The plot function *diagwl* from the R package *climatol*:
 
-Licensed under GPL-2 and GPL-2. 
-For details see
-http://www.climatol.eu/
+Licensed under GPL-2 and GPL-3. 
+For details see the package description on CRAN
+https://cran.r-project.org
