@@ -18,18 +18,18 @@ Package 'grid' draws the plot.
 A grob (grid plot object) is returned,
 which can then be displayed with 'grid.draw'.
 
-Climatic data is a 
-data.frame containing 12 columns (one per month, January to December) 
+Climatic data is a
+data.frame containing 12 columns (one per month, January to December)
 and 4 rows, one per variable. The variables are:
 
 | variable | description | units |
 | ---------| ------------| ------|
-| prec | Mean monthly precipitation| in or mm | 
-| tmin | Mean maximum daily temperature per month | F or C | 
-| tmax | Mean minimum daily temperature per month | F or C | 
-| atmn | Absolute monthly minimum temperature per month | F or C | 
+| prec | Mean monthly precipitation| in or mm |
+| tmin | Mean maximum daily temperature per month | F or C |
+| tmax | Mean minimum daily temperature per month | F or C |
+| atmn | Absolute monthly minimum temperature per month | F or C |
 
-Absolute monthly minimum temperature is 
+Absolute monthly minimum temperature is
 used to determine the probable frost months
 (when absolute monthly minimums are equal or lower than 0 C).
 
@@ -75,6 +75,13 @@ Modifications to the original function:
     source( "Test_WLDiagram.R" )
 
 
+## Explaination of the diagram
+
+![](./WLDiagram-Annotated.svg?raw=true "WLDiagram Annotated")
+
+The Walter and Lieth (1960, 1963) climate diagrams summarize mean precipitation and temperature for one site or region. Vertical scales are constant so that the visual pattern from different locations can be quickly compared. The astronomic summer is always shown in the middle of the diagram, hence the month scale begins in January in the northern hemisphere, and July in the southern. Vertical blue lines indicate humid periods, and dashed red lines indicate dryer periods. Months with likely frost and probable frost are shown in the bar at 0 C.
+
+
 ## Author
 
 Thomas E. Hilinski <tom.hilinski@colostate.edu>
@@ -83,8 +90,8 @@ Plot function is derived from function diagwl in the
 R package climatol, written by
 Jose A. Guijarro <jguijarrop at aemet.es>
 
-Feedback and suggestions were provided by 
-Dennis Ojima and Robert Flynn at the 
+Suggestions and feedback were provided by
+Dennis Ojima and Robert Flynn at the
 Natural Resource Ecology Laboratory, Colorado State University.
 
 ## Files
@@ -103,7 +110,7 @@ Natural Resource Ecology Laboratory, Colorado State University.
 
 ## Reference
 
-Walter, H., Lieth, H., 1960. 
+Walter, H., Lieth, H., 1960.
 Klimadiagramma-Weltatlas. G. Fischer Verlag, Jena.
 
 ## License
